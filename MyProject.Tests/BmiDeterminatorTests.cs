@@ -2,13 +2,15 @@
 {
     public class BmiDeterminatorTests
     {
-        [Fact]
-        public void DetermineBmi_ForBmiBelow18_5_ReturnsUnderweightClassification()
+        [Theory]
+        [InlineData(10.0)]
+        [InlineData(13.0)]
+        [InlineData(15.0)]
+        public void DetermineBmi_ForBmiBelow18_5_ReturnsUnderweightClassification(double bmi)
         {
             // arrange
 
             BmiDeterminator bmiDeterminator = new BmiDeterminator();
-            double bmi = 10;
 
             // act
 
