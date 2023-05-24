@@ -19,9 +19,29 @@
 
             double result = calculator.CalculateBmi(weight, height);
 
-            // asseret
+            // assert
 
             Assert.Equal(bmiResult, result);
+        }
+
+        [Theory]
+        [InlineData(0, 190)]
+        [InlineData(-5, 150)]
+        [InlineData(-9, 0)]
+        [InlineData(0, 0)]
+        public void CalculateBmi_ForInvalidArguments_ThrowsArgumentException(double weight, double height)
+        {
+            // arrange
+
+            MetricBmiCalculator calculator = new MetricBmiCalculator();
+
+            // act
+
+            Action action = () => calculator.CalculateBmi(weight, height);
+
+            // assert
+
+            Assert.Throws<ArgumentException>(action);
         }
     }
 }
