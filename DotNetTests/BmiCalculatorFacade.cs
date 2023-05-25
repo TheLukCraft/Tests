@@ -1,11 +1,8 @@
-﻿using MyProject.Calculator;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using DotNetTests.Calculator;
+using DotNetTests.Model;
 
-namespace MyProject
+namespace DotNetTests
 {
     public class BmiCalculatorFacade
     {
@@ -45,12 +42,11 @@ namespace MyProject
             var classification = _bmiDeterminator.DetermineBmi(bmi);
 
             return new BmiResult()
-            { 
-                Bmi = bmi, 
-                BmiClassification = classification, 
+            {
+                Bmi = bmi,
+                BmiClassification = classification,
                 Summary = GetSummary(classification)
             };
-
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace MyProject.Tests
+﻿using DotNetTests.Model;
+
+namespace DotNetTests.Tests
 {
     public class BmiDeterminatorTests
     {

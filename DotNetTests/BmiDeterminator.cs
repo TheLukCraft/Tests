@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DotNetTests.Model;
 
-namespace MyProject
+namespace DotNetTests
 {
     public class BmiDeterminator
     {

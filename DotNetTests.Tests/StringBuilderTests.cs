@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace MyProject.Tests
+namespace DotNetTests.Tests
 {
     public class StringBuilderTests
     {

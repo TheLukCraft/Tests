@@ -1,4 +1,6 @@
-﻿namespace MyProject.Tests
+﻿using DotNetTests.Calculator;
+
+namespace DotNetTests.Tests
 {
     public class MetricBmiCalculatorTests
     {

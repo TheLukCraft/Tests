@@ -1,4 +1,4 @@
-﻿namespace MyProject
+﻿namespace DotNetTests.Model
 {
     public enum UnitSystem
     {

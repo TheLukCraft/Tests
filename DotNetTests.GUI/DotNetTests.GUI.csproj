@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyProject\MyProject.csproj" />
+    <ProjectReference Include="..\DotNetTests\DotNetTests.csproj" />
   </ItemGroup>
 
 </Project>
